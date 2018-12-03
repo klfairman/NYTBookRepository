@@ -1,0 +1,20 @@
+{
+  "name": "NYTBookRepository",
+  "version": "1.0.0",
+  "description": "TopBRec Top Book Recommendation site As a user I want to be able to browse the latest popular books or search up recommendations for myself.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klfairman/NYTBookRepository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klfairman/NYTBookRepository/issues"
+  },
+  "homepage": "https://github.com/klfairman/NYTBookRepository#readme"
+}
