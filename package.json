@@ -1,20 +1,37 @@
 {
-  "name": "NYTBookRepository",
+  "name": "React_NYT_search",
   "version": "1.0.0",
-  "description": "TopBRec Top Book Recommendation site As a user I want to be able to browse the latest popular books or search up recommendations for myself.",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm build",
+    "heroku-prebuild": "cd client && npm install", 
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/klfairman/NYTBookRepository.git"
+    "url": "git+https://github.com/xhrsteven/React-NYT-search.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/klfairman/NYTBookRepository/issues"
+    "url": "https://github.com/xhrsteven/React-NYT-search/issues"
   },
-  "homepage": "https://github.com/klfairman/NYTBookRepository#readme"
+  "homepage": "https://github.com/xhrsteven/React-NYT-search#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.18.3"
+  }
 }
+
